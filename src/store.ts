@@ -19,5 +19,14 @@ export class Gamemanager{
         const game = this.games.find(game =>game.id === gameId);
         game?.moves.push(move)
     }
+    addGame(gameId:string){
+        const game = {
+            id:gameId,
+            whitePlayername:'sangeeta',
+            blackPlayername:'varsha',
+            moves:[]
+        }
+        this.games.push(game);
+    }
 }
 
