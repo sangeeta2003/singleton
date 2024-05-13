@@ -1,3 +1,4 @@
+
 interface Game{
     id:string;
     whitePlayerName:string;
@@ -27,6 +28,9 @@ export class Gamemanager{
             moves:[]
         }
         this.games.push(game);
+    }
+    log(){
+        console.log(this.games);
     }
 }
 
