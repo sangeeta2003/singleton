@@ -27,9 +27,9 @@ export class Gamemanager{
         return this.games;
     }
     public addMove(gameId:string,move:string){
-        const game = this.games.find(game =>game.Id === gameId);
+        const game = this.games.find(game =>game.id === gameId);
         if(game){
-            game.moves.push(move);
+            game.move.push(move);
         }
     }
     public logState(){

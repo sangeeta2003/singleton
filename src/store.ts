@@ -23,8 +23,8 @@ export class Gamemanager{
     addGame(gameId:string){
         const game = {
             id:gameId,
-            whitePlayername:'sangeeta',
-            blackPlayername:'varsha',
+            whitePlayerName:'sangeeta',
+            blackPlayerName:'varsha',
             moves:[]
         }
         this.games.push(game);
