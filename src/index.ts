@@ -1,7 +1,7 @@
-import { Gamemanager} from "./store";
+import { gamemanager} from "./store";
 import { startLogger } from "./logger";
 
-const gamemanager = new Gamemanager();
+
 startLogger();
 setInterval(()=>{
 

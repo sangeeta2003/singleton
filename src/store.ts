@@ -33,4 +33,4 @@ export class Gamemanager{
         console.log(this.games);
     }
 }
-
+ export const gamemanager = new Gamemanager();

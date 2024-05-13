@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Gamemanager = void 0;
+exports.gamemanager = exports.Gamemanager = void 0;
 class Gamemanager {
     constructor() {
         this.games = [];
@@ -25,3 +25,4 @@ class Gamemanager {
     }
 }
 exports.Gamemanager = Gamemanager;
+exports.gamemanager = new Gamemanager();
