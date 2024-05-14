@@ -8,13 +8,27 @@ interface Game{
 }
 
 
+// singleton
+// adapter pattern,factory pattern
 
 
 export class Gamemanager{
     games:Game[] = [];
-    constructor(){
+    private static instance:Gamemanager;
+
+    private constructor(){
         this.games=[];
     }
+static getInstance(){
+    if(Gamemanager.instance){
+        return Gamemanager.instance
+
+    }
+    Gamemanager.instance = new Gamemanager();
+    return Gamemanager.instance;
+}
+
+
     addmove(gameId:string,move:string){
         console.log(`adding move ${move} to game ${gameId}`)
         const game = this.games.find(game =>game.id === gameId);
@@ -33,4 +47,4 @@ export class Gamemanager{
         console.log(this.games);
     }
 }
- export const gamemanager = new Gamemanager();
+ export const gamemanager =  Gamemanager.getInstance();
