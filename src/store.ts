@@ -44,7 +44,7 @@ static getInstance(){
         this.games.push(game);
     }
     log(){
-        console.log(this.games);
+        console. log(this.games);
     }
 }
  export const gamemanager =  Gamemanager.getInstance();
